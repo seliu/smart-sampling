@@ -75,11 +75,11 @@ def get_wave_data( freq, offset_list, duration = 0.1, framerate = 40000, shape_l
         duration = 0.1
         framerate = 40000
 
-        # # Sawtooth
-        # if 'sawtooth' in shape_list:
-        #     data = get_sawtooth_wave_data( freq = freq, offset = offset, duration = duration, framerate = framerate, noise_ratio = 0 )
-        #     data_x.append( data )
-        #     data_y.append( freq )
+        # Sawtooth
+        if 'sawtooth' in shape_list:
+            data = get_sawtooth_wave_data( freq = freq, offset = offset, duration = duration, framerate = framerate, noise_ratio = 0 )
+            data_x.append( data )
+            data_y.append( freq )
 
         # Square
         if 'square' in shape_list:
